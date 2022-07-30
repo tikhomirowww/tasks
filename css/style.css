@@ -41,7 +41,7 @@
         width: 90%;
     }
 } */
-* {
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -149,4 +149,154 @@ font-size: 55px;
         width: 57%;
         margin-top: 21px;
     }
+} */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.block_top {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.block_top h2 {
+    font-size: 50px;
+    font-weight: 900;
+}
+
+.block_top p {
+ font-size: 20px;
+ margin-top: 20px;
+}
+
+.block_bottom {
+    margin-top: 30px;
+    display: flex;
+}
+.bottom_text {
+    background-color: #CCF0E6;
+}
+
+.button .bg_tr {
+    margin-top: 10%;
+    margin-left: 6.7%;
+    position: absolute;
+    z-index: 1;
+}
+
+.button .bg {
+    margin-top: 11%;
+    margin-left: 7.5%;
+    position: absolute;
+    z-index: 2;
+}
+
+.button .vector {
+    margin-top: 13%;
+    margin-left: 10%;
+    position: absolute;
+    z-index: 3;
+}
+.bottom_text {
+    height: 50vh;
+    padding: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: start;
+    margin-left: 11%;
+    width: 40%;
+    font-size: 22px;
+}
+.left_img .image {
+    height: 50vh;
+    width: 122%;
+}
+
+.bottom_text h4 {
+    margin-top: 20px;
+}
+
+@media all and (max-width: 1293px) {
+    .left_img .image {
+        width: 123%;
+    }
+    .bottom_text {
+        width: 45%;
+    }
+}
+
+@media all and (max-width: 1130px) {
+    .left_img .image {
+        width: 124%;
+    }
+    .bottom_text {
+        width: 50%;
+    }
+    .button .vector {
+        margin-left: 9%;
+    }
+    .button .bg {
+        margin-left: 6%;
+    }
+    .button .bg_tr {
+        margin-left: 4.7%;
+    }
+}
+
+@media all and (max-width: 1032px) {
+    .left_img .image {
+        width: 100%;
+    }
+    .bottom_text {
+        width: 65%;
+        margin-left: 0;
+    }
+    .button .vector {
+        margin-left: -1%;
+    }
+    .button .bg {
+        margin-left: -5%;
+    }
+    .button .bg_tr {
+        margin-left: -6%;
+    }
+}
+
+@media all and (max-width: 880px) {
+    .block_bottom {
+        flex-wrap: wrap;
+    }
+    .left_img {
+        width: 100%;
+    }
+    .bottom_text {
+        width: 100%;
+        margin-left: 0;
+        margin-top: -1%;
+        padding: 40px 120px 40px 70px;
+    }
+    .button .vector {
+        margin-top: 21%;
+        margin-left: -10%;
+    }
+    .button .bg {
+        margin-top: 18%;
+        margin-left: -15%;
+    }
+    .button .bg_tr {
+        margin-top: 16.5%;
+        margin-left: -16.5%;
+    }
+
 }
